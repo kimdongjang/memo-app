@@ -22,11 +22,11 @@ const StyledTextArea = styled(Textarea)`
   resize: none;
 `;
 
-export default class InputSet extends Component {
+class InputSet extends Component {
   static propTypes = {
-    onChange: this.propTypes.func,
-    title: this.propTypes.string,
-    body: this.propTypes.string,
+    onChange: PropTypes.func,
+    title: PropTypes.string,
+    body: PropTypes.string,
   };
   componentDidMount() {
     this.title.focus();
@@ -55,3 +55,4 @@ export default class InputSet extends Component {
     );
   }
 }
+export default InputSet;
