@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import Layout from "./Layout";
+import Header from "../components/Header";
+import Layout from "../components/Layout";
+import WriteMemo from "./WriteMemo";
 
 export default class App extends Component {
   render() {
@@ -8,6 +9,9 @@ export default class App extends Component {
       <div>
         <Layout>
           <Header />
+          <Layout.Main>
+            <WriteMemo />
+          </Layout.Main>
         </Layout>
       </div>
     );
